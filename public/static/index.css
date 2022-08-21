@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100;300;400;600;700&display=swap');
+:root{
+
+    --font-family: 'Kanit', sans-serif;
+    --color-text: #004E98;
+    --main-background: #EBEBEB;
+    --color-border: #dfe1e6;
+    --color-text-input: #bbbfc5;
+}
+body{
+    margin: 0;
+    height: 100vh;
+    font-family: var(--font-family);
+    color: var(--color-text);
+    height: 100vh;
+}
+.navbar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 15vh;
+}
+.navbar a{
+    color: var(--font-title-color);
+    font-weight: 700;
+    font-size: xx-large;
+    margin: 0 5% 0 5%;
+    text-decoration: none;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 85vh;
+    background-color: var(--main-background);
+}
+.color-preview{
+    height: 30vh;
+    width: 100%;
+    background-color: #3A6EA5;
+}
+.box-input{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    min-height: 60vh;
+    margin-top: -20%;
+    border: 1px solid var(--color-border);
+    background-color: #fff;
+}
+.color-input{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto 0 auto;
+}
+.content-input{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+input, button{
+    height: 8vh;
+    border: none;
+    margin: 4% 2% 4% 2%;
+    border: 1px solid #bbbfc5;
+    box-sizing: border-box;
+    border-radius: 6px;
+    font-size: 100%;
+    font-weight: 600;
+    outline: none;
+    line-height: normal;
+    color: var(--color-text-input);
+}
+.input-color-picker{
+    padding: 0;
+    width: 20%;
+    border: none;
+    background-color: transparent;
+}
+.input-text{
+    width: 40%;
+    padding: 10px;
+    color: var(--color-text)
+}
+.delete{
+    width:10%;
+    border: none;
+    margin: 0;
+    background-color: transparent;
+    font-size: 180%;
+    font-weight: 300;
+    width: 20%;
+}
+.action-button{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.action-button button{
+    width: 80%;
+    margin: 4% auto 4% auto;
+    background-color: transparent;
+}
+.on {
+    animation: colorchange 1s alternate infinite ease-in-out;
+}
+
+@media only screen and (min-width: 768px){
+    .color-preview{
+        height: 35vh;
+    }
+    .box-input{
+        margin-top: -10%;
+        width: 50%;
+    }
+    .color-input{
+        width: 50%;
+    }
+    .input-color-picker{
+        width: 15%;
+    } 
+    .delete{
+        width: 5%;
+    }
+    .action-button button{
+        margin: 1% auto 1% auto;
+    }
+}
